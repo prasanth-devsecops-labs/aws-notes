@@ -1,0 +1,20 @@
+SDLC:
+
+Different Process followed at different time periods.
+
+Waterfall : This process was followed in early days, results were very poor and collabaration between stake holders is very less.
+
+Agile : Sprints based, work gets spiltted into small small chunks also collabaration and communication between stakeholders improved better.
+
+DevSecOps : collabaration coordination and product reliability etc.. improved alot with this approach. Major change here is, deployment and testing and getting feedback almost like everday process and problems
+identification at early stage almost like everday based on testing and then fixing them helps in improving the final product.
+
+Basically we use couple of tools to achieve this like github for code repo and ci/cd runs, terraform for infra, ansible for config, kubernetes to keep the applications almost with zero down time etc.
+
+Security going to introduce in early stage itself, instead of ending stages. So everday we check security related issues by using some tools like parasoft, sonaqube and blacduck etc.. and this entire process 
+
+Business and Tech, Use Tech to solve Business problems. Not every business requires to go with Tech, based on business value and requirements and it's turn over,
+where Tech can help in improving the business then one must think about it. Now a days every small business going with online approach.
+
+
+
