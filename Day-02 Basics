@@ -1,0 +1,44 @@
+Computer :  any device with Hardware componets like CPU RAM ROM OS with IP enbled can be treated as computer, it does some kind of computing based on it's intended behaviour. AC Washing machine mobile etc..
+========
+
+Windows Vs Linux :
+===============
+
+
+Client and Server Architecture : Any device is providing some kind of service we can consider as Server and the device which is consuming/requesting something from it can be called as client.
+===============================
+
+Client and Sever defintions purely depends on case to case basis. for example: your pc is connected with mobile and fetching phots from gallery. here mobile is server and pc is client. if you are trying to get/control
+your pc with mobile and getting info then pc becomes server and mobile becomes client.
+
+Authentications and Authorisations:
+===================================
+username and password                          ====> Least secured
+Tokens/OTP/Access keys etc                      ===> medium secure
+Fingerprints, retina, thumb impressions etc..   ===> High secure way
+
+Now a days almost every application is mandated Two factor or multifactor authentication to secure systems and data.
+
+Key pairs:
+==========
+Public key and Private key pairs using  ===>> ssh-keygen -f daws-88s
+Add/Import public keys in aws and keep private keys in local pc and use it for connecting via ssh protocol
+
+===>> ssh -i <private-key> ec2-user@IP (protocol, port, server name and username and password)
+
+http : 80
+https : 443
+ssh : 22
+
+
+Firewall config:
+================
+
+inbound and outbound rules to be configured/set  for security purpose.  0.0.0.0/0 (any user from anywhere can connect with this settings)
+
+
+
+
+
+
+
