@@ -19,22 +19,28 @@ Fingerprints, retina, thumb impressions etc..   ===> High secure way
 
 Now a days almost every application is mandated Two factor or multifactor authentication to secure systems and data.
 
+
+Firewall config:
+================
+create security group: allow all initially
+inbound and outbound rules to be configured/set  for security purpose.  0.0.0.0/0 (any user from anywhere can connect with this settings)
+
+
 Key pairs:
 ==========
 Public key and Private key pairs using  ===>> ssh-keygen -f daws-88s
 Add/Import public keys in aws and keep private keys in local pc and use it for connecting via ssh protocol
 
-===>> ssh -i <private-key> ec2-user@IP (protocol, port, server name and username and password)
+===>> ssh -i <path to private-key> ec2-user@IP (protocol, port, server name and username and password)
 
 http : 80
 https : 443
 ssh : 22
 
 
-Firewall config:
-================
+ec2 instance launch
 
-inbound and outbound rules to be configured/set  for security purpose.  0.0.0.0/0 (any user from anywhere can connect with this settings)
+
 
 
 
