@@ -1,0 +1,65 @@
+full path(absolute path) and short paths(relative path) ==> can be used based on the location where you are trying to perform some operations using commands.
+
+cd /d/devops/folder1/folder2/
+
+cd folder1/folder2
+
+cd change directory
+$ ==> Normal user
+# ==> root user
+/root ==> root user home directory
+
+ls -ltr ==> latest changed files appears at bottom of the terminal
+ls -a ==> hidden files
+
+cat > filename.txt ==> press ENTER Key and then type your content and then press ENTER Key and Cntrl + D ==> saves the content in file.
+> ==> redirection to file
+>> ==> append content in file
+
+cat <filename>  ==> to show the content of file
+cp and mv <source> and <destination>  ==> Copy and Cut also Rename commands
+
+wget URL ==> To Downlaod
+curl URL ==> Shows the content in terminal
+
+grep <search string> <filename>
+-i ==> case insensitive
+-v ==> non matching
+-c ==> matching line numbers count
+-n ==> display line numbers
+
+Display line numbers ending with word to be searched
+
+$ ==> ending
+^ ==> starting
+
+tail -f <filename> ==> to follow the logs
+
+head ==> top 10 lines by default
+tail ==> bottom 10 lines by default
+
+head -n <linenumbers to be print> <filename>
+tail -n <linenumbers to be print> <filename>
+
+| ==> pipe command output of one command can be passed as input to other command.
+
+cat test.log | grep <serach string>  ==> 
+
+
+test.txt inside content is ==>  https://raw.githubusercontent.com/daws-88s/notes/refs/heads/main/session-02.txt
+-d --> delimeter /
+cut -d "/" -f1 test.txt ==> https:
+
+awk -F "/" '{print $2}'
+
+
+
+
+
+
+
+
+
+
+
+
