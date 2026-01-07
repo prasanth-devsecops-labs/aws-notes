@@ -28,6 +28,15 @@ grep <search string> <filename>
 -c ==> matching line numbers count
 -n ==> display line numbers
 
+grep -o word <filename> | wc -l  ===> number of instances of word in a file
+
+grep -o 'word' *.txt | wc -l  ==> count in multiple files
+
+-o ==> prints each match on new line
+-ow ==> match whole word
+-owi ==> case insensitive
+wc -l ==> counts lines 
+
 Display line numbers ending with word to be searched
 
 $ ==> ending
