@@ -1,0 +1,104 @@
+awk -F ":" ' $3>=1000 { print $1, $3 }'  usersfile  ==> prints username and id value greater than 1000
+
+vim editor:
+==========
+vim <file name>         ==> opens the file and if file is not there, it will create one and opens directly.
+
+Colon mode:
+============
+
+:q                                                                => quit
+:q!                                                               => quit without saving changes
+:wq                                                               => save and quit
+:set nu                                                           => Display line numbers
+:<Line Number>                                                    => Cursor goes to the line number
+:/<word to search>                                                => Top to bottom
+:?<word to search>                                                => Bottom to Top
+:<Line number>/d                                                  => delete line
+:%d                                                               => Delete everything
+:noh                                                              => don't highlight
+:<Line numbers>s/<word to find>/<word to replace/                 => replaces first occurence in the line
+:<Line numbers>s/<word to find>/<word to replace/g                => replaces all occurence in the line
+:%s/<word to find>/<word to replace/                              => replaces all occurence in the all lines
+
+
+Esc Mode:
+=========
+
+gg                                                               => Takes to top of the file
+Shift+g                                                          => Takes bottom to top
+u                                                                => undo
+Ctrl+r                                                           => redo
+dd                                                               => deletes line
+yy                                                               => copy the line
+p                                                                => pastes below that line
+Shift+p                                                          => pastes above that line
+
+
+CRUD:
+=====
+USER Management:
+================
+
+user group role permission
+
+useradd <user name>
+id <user name>
+cat /etc/passwd   => all users info
+
+groupadd <group name>
+cat /etc/group    => display group info
+
+usermod -g  <group name> <user name>  => Change primary group
+usermod -aG <group name> <user name>  => user has been Append secondary group
+
+Command	     Meaning	                    Risk
+usermod -g	Change primary group	        Medium
+usermod -G	Replace all secondary groups	High
+usermod -aG	Append secondary group	      Safe ✅
+
+
+passwd <user name>  => to set password for user
+
+Default Key based authentications only enabled. /etc/ssh/sshd_config   => ssh configs are here
+Enable PasswordAuthentication to yes
+sshd -t  => check config file syntax errors
+
+Giving sudo access to users
+/etc/sudoers
+for specific permissions add here in this file, then the user will have that permissions only instead of all sudo permissions.
+if you want to give full permissions just add user to sudo group.
+
+gpasswd -d <user name> <group name>   => removing user from a group
+
+Compression .zip for windows and .tar.gz for Linux
+
+tar -cf <file name>.tar.gz  <folder to compress>  => creating zip
+tar -xf <file name>.tar.gz   => extracting
+
+usermod -L <user name>  => To Lock the user access
+userdel -r <user name>  => Deletes the user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
