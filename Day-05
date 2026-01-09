@@ -1,0 +1,78 @@
+User Permissions:
+=================
+          Type    users/owners     group    others
+                      u             g        o
+          -        rwx              r--     r--
+R => 4
+W => 2
+X => 1
+
+chmod 700 file Name/folder Name  ==> either owner or root user can only change the access levels
+
+OWENERSHIP:
+===========
+Only root user can change the ownership of file/folders
+
+chown -R <user>:<group>  <file/folder Name>  ===> -R recursively applies ownership inside folder files also.
+
+EMPLOYEE JOIN ORG:
+==================
+1. He Generates keys locally
+2. Sends public key to admin
+3. Admin first creates user in server and automatically /home/user directory gets creates for that user. Admin now creates .ssh folder inside this.
+4. Inside .ssh folder he will create a file name with authorized_keys and paste public keys shared by user.
+5. Permissions for .ssh folder is 700
+6. Permissions for authorized_keys max 600
+7. Change Ownership to user itself chown user:user -R .ssh/
+9. Add user to devsecops group  by ==> usermod -aG devsecops user
+10. Also Create a file name with devsecops inside /etc/sudoers.d/ and add content %devsecops ALL(ALL:ALL) NOPASSWD:ALL it will enable sudo access to user
+11. User can now login 
+      ssh -i <his pvt key> <his username>@IP
+
+
+PACKAGE MANAGEMENT:
+===================
+yum - old redhat pkg manager
+dnf - latest redhat pkg manager
+apt-get or apt - Ubuntu pkg manager
+
+with sudo 
+dnf install pkg-name
+dnf remove pkg-name
+dnf list installed           ==> /etc/yum.repos.d    here all URL's configured
+dnf list avaialble
+dnf search pkg-name
+
+
+SERVICE MANAGEMENT:
+===================
+      0 - 65535  ports
+https = 443 port
+ssh   = 22 port
+
+with sudo
+systemctl start service-name
+systemctl stop service-name
+systemctl status service-name
+systemctl enable service-name
+systemctl disable service-name
+systemctl restart service-name
+
+
+
+NETWORK MANAGEMENT:
+==================
+netstat -lntp  ==> to see what services and ports are running and opened
+
+
+
+
+
+
+
+
+
+
+
+
+
