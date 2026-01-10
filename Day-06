@@ -1,0 +1,56 @@
+PROCESS MANAGEMENT:
+===================
+root process 
+0 => PID
+1 => PID
+          Every Child ID will have Parent ID
+PID    PPID        
+2       0
+3       1
+
+ps => Process started by the current user
+ps -ef => All process
+ps -ef | grep sleep
+top  =>  this will give all process deatils and resources details.
+background process  ==>  sleep 100 & --> will run in background
+foreground process ==> sleep 100 --> blocks the screen we can't do anything
+
+kill PID ==> Terminates the process
+kill -9 PID  ==> Kills the process forcefully
+
+Whenever services hung, Get all the logs, app logs, DB logs, Serverlogs etc..  Kill the process and restart the service.
+We always Monitor CPU RAM utilizations and send ALERTS when set limits exceeds.
+
+
+3 Tier Architecture:
+====================
+Desktop apps => old days => Consume more resources, install upgrade repair, data stores in local pc, Antivirus needed, No Remote access..etc problems..
+Web Apps => Everything we can access over server and all above issues are sorted.
+
+User ==> LoadBalancer ==> Web Server ==> APP Server ==> DB Server
+
+Load Balancer can be public and private types based on where we want to keep.
+
+Data is everything and it is of three forms: Structured , Semi-Structured and Un Structured Data.
+
+
+PROJECT:
+========
+
+devops-practice image we have to use here and ssh to ec2-user. No keypairs required it is password based authentication. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
