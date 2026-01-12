@@ -20,5 +20,31 @@ default port ==>  3306
 default user ==>  root
 
 To connect with mysql-server, we would need client i.e, mysql (when you install mysql-server it automatically installs mysql client as well)
-
 Login to mysql client and search for databases(schema(Tables)) ==> show databases;
+
+mysql > show databases;
+      > use transactions;
+      > show tables;
+      > select * from transactions;
+
+Backend language here nodejs 20 version they are using.
+To Run any application we would need to create system user, just to run the apps.
+
+system users don't need password to create, just username.
+
+package.json => build file contains all the data and dependencies details
+npm => build tool to download dependencies from internet which are listed on package.json
+
+for java pom.xml for python requirements.txt
+maven and pip are buidl tools for the same above
+
+npm install ==> reads package.json and downloads them.
+
+.service files ==>  /etc/systemd/system/ ==> *.service all files stay here
+
+publice IP vs private IP ==> External interface vs Internal interface
+
+Before starting the backend service Install mysql and load schema to DB from back end service and then start the backend service. without schema load it will fails.
+
+
+
