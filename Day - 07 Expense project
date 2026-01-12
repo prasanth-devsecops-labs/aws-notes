@@ -1,0 +1,24 @@
+Expense Project Manual way of setup:
+====================================
+
+Linux Server(pyhsical server) inside it ==> DB Server (Software Server)
+
+Create 3 EC2 instances
+
+To connect we can use any clients like git bash, MobaXterm, putty etc.. If you are Mac/Linux users you already have terminals to connect no need of any clients.
+
+Install MobaXterm for windows(your choice) It will help us to use multiple instances in different tabs, navigation is flexible comapared to git bash.
+
+After installation open and in SSH give IP, it will ask for user name and password, enter details and connect with machines. You can rename tabs for easy navigation b/w mutliple tabs.
+
+SQL == Structured Query Language
+RDBMS == Relational Data Base Managemet System ( Oracle, MySql, MSSql, postgress etc..)  Data stores in Table and Columns approach. With Primary Key Foreign Key approach data can be looked into.
+Excel sheets we don't have options of relations.
+
+Install mysql-server then start and enable it. 
+default port ==>  3306
+default user ==>  root
+
+To connect with mysql-server, we would need client i.e, mysql (when you install mysql-server it automatically installs mysql client as well)
+
+Login to mysql client and search for databases(schema(Tables)) ==> show databases;
