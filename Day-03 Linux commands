@@ -39,8 +39,9 @@ wc -l ==> counts lines
 
 Display line numbers ending with word to be searched
 
-$ ==> ending
-^ ==> starting
+grep word$ file      $ ==> ending
+grep ^word file      ^ ==> starting
+
 
 tail -f <filename> ==> to follow the logs
 
