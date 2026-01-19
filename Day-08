@@ -1,0 +1,60 @@
+Logs locations:   /var/log
+tail -f messages  or less messages  ==> to see the latest logs
+
+telent IP PORT  ==> to connect to the port on server and check the path to the port are open or not
+(to connect to a port on a remote server to verify if the path from our computer to that server is open over that port.)
+
+Nginx ==> Web Server For Frontend code to work need WebServer( HTML CSS and JS )
+HTTP Web Server
+Old days Apache2 Server, but now NGINX using mostly.
+
+For any tool Config is most important file:
+
+for Nginx
+Configs ==> /etc/nginx
+HTML  ==> /usr/share/nginx/html    ==> Default page loads from here by index.html on port 80
+Logs  ==> /var/log/nginx
+
+Default config location ==> /etc/nginx/confd/*.conf
+Custom config location ==> /etc/nginx/default.d/*.conf  ==> users can add their config here.
+
+NGINX As Reverse Proxy
+======================
+
+Forward Proxy                                            Reverse Proxy
+Hides Clients Identity                                    Hides Servers identity
+Sits B/W Client and Server                                
+Client only aware about proxy                             Server Aware
+VPN, content filtering                                    Security reasons and QUEUE Management(Load balancing)
+Can be used as Cache                                      Used for SSL Termination
+
+
+API:  Applicatin interface progrmming
+====
+
+http://<IP>/api/transactions  ==> /api/ forwards request to Database
+
+CRUD anything related to on DB
+
+HTTP Methods:
+=============
+
+GET ==> Read  (Safest operation)
+POST  ==> Create (possible duplicates)
+PUT ==> Update
+DELETE  ==> Delete
+
+
+ICANN: Internet corporation for Assigned Names and Numbers
+
+DNS:  Domain Name System
+====
+
+ROOT Servers and Top level Domains (TLD)
+
+
+
+
+
+
+
