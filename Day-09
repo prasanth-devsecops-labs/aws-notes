@@ -1,0 +1,34 @@
+DNS Resolver flow:
+=================
+
+Example.com --> Browser --> Browser Cache --> OS --> OS Cache --> ISP DNS Resolver --> ISP/DNS Cache --> Root Servers --> TLD Owners --> Registars(GoDaddy) --> fetches A record
+
+Root servers  ==> 13 are there world wide and they handles internet with these.
+Tracks all Domain information and TLD Information.
+
+TLD Top Level Domain: 
+.com
+.in
+.org
+.us
+.uk
+.ai
+etc..
+
+Domain Registars/Sellers:  GoDaddy, Hostinger, aws, gcp, azure etc..
+
+How to apply for a domain ==>
+1. Availability check with TLD Owners is Domain available or not.
+2. If available Collects the details from buyers.
+3. After payments, GoDaddy updates details to TLD about buyer and details of domain.
+4. Create A record against the domain.
+   example.com A 17.18.19.212  ==> GoDaddy updates to TLD.
+
+We can change authority to another company from Registars to have separate Name Servers to provide IP address.
+Name Servers NS: handles internet requests of the domain
+
+TTL : Time To Live in Cache, Min 1 hr 3600 sec to be set, if your domain updates are frequent we need to chane to min value to propagate updates to all places.
+After updates we can re set to 3600 sec for better performance/optimisations.
+
+
+nslookup -type=ns prashum.online
