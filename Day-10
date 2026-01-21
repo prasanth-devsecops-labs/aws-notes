@@ -1,0 +1,93 @@
+Create 3 servers for app deployment, config DB, Backend and Frontend.
+
+in AWS Hostedzones will provides Name Servers for our domain.
+
+ROOT SERVERS  
+TLD
+REGISTARS    
+NS
+
+On DNS Checker portal, check for purchased domain with NS records.
+
+Domain ===> prashum.online
+	Sub-domain ==> db.prashum.online   backend.prashum.online   frontend.prashum.online
+
+nslookup db.prashum.online
+
+curl http://localhost:8080/health
+systemctl status
+netstat -lntp
+ps -ef | grep node
+
+/var/log/nginx
+/usr/share/nginx/html/ 
+
+HTTP Status Codes:
+===============
+GET
+POST
+
+100 : Informational
+
+2XX : Success
+		200 => OK
+		201 => Created
+		204 => Deleted
+
+3XX : Redirectional
+		302 => temp redirection
+		301 => URL redirection
+		304 => Cache
+
+4XX : Client Errors
+		404 => Not found
+		400 => Bad request
+		401 =>  Authentication 
+		403 => Forbidden no permissions
+
+5XX : Server Errors
+		501 => internal server error
+		503 => Service unavilable
+
+
+Types of DNS Record:
+=================
+
+NS    => Name servers who is managing the domain
+SOA   => Start of authority
+A     => IPv4
+AAAA  => IPv6
+MX    => Mail records
+TXT   => Verification
+CNAME => Canonical name, alias name for another domain
+
+
+SQL:     ==> Structured data with table formats row and column
+---------
+MySQL
+Oracle
+Postgress
+MSSQL
+
+NoSQL:  ==> For huge amounts of data with no fixed structure.
+----------
+MongoDB  
+
+
+Redis:
+-------
+		Caching database
+
+TTL
+
+Queue:   Asynchronus 
+---------
+
+		
+		
+
+
+
+
+
+
