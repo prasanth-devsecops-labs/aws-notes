@@ -1,15 +1,18 @@
-Computer :  any device with Hardware componets like CPU RAM ROM OS with IP enbled can be treated as computer, it does some kind of computing based on it's intended behaviour. AC Washing machine mobile etc..
+Computer :  any device with Hardware componets like CPU RAM ROM OS with IP enbled can be treated as computer, it does some kind of
+computing based on it's intended behaviour. AC Washing machine mobile etc..
 ========
 
 Windows Vs Linux :
 ===============
 
 
-Client and Server Architecture : Any device is providing some kind of service we can consider as Server and the device which is consuming/requesting something from it can be called as client.
+Client and Server Architecture : Any device is providing some kind of service we can consider as Server and the device which is
+consuming/requesting something from it can be called as client.
 ===============================
 
-Client and Sever defintions purely depends on case to case basis. for example: your pc is connected with mobile and fetching phots from gallery. here mobile is server and pc is client. if you are trying to get/control
-your pc with mobile and getting info then pc becomes server and mobile becomes client.
+Client and Sever defintions purely depends on case to case basis. for example: your pc is connected with mobile and fetching phots
+from gallery. here mobile is server and pc is client. if you are trying to get/control your pc with mobile and getting info then pc
+becomes server and mobile becomes client.
 
 Authentications and Authorisations:
 ===================================
