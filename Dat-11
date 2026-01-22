@@ -1,0 +1,13 @@
+DB: SQL NoSQL Caching and Queue 
+
+Queue 1 to 1  Messages
+Synchronous(HTTP)          Asynchronous(RabbitMQ, Kafka etc..)
+                           Scalable, Reliable, no waiting.
+
+pub/sub : Publisher -> TOPIC -> Subscriber => 1 to many 
+
+
+Roboshop Project 2 DB and 4 Modules/Components installation manually.
+MongoDB Catalogue Frontend
+Redis User Cart
+
