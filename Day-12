@@ -16,3 +16,24 @@ Old Enterprise applications:
 enterprise archive => .ear
 
 Monolithic: .war
+
+Micro services: inbuilt servers (cart, user, etc modules)
+
+nodejs = node + npm
+maven = java + maven
+
+mvn clean package => cleans previous builds + install dependencies + pack the application => New targer directory
+will be created.
+
+Python: .py extension, pip build tool, requirements.txt
+
+Debug steps: 
+Frontend logs => backend logs => DB logs
+
+1. front end config check
+2. backedn service is running or not check logs
+3. DB is running or not and data is loaded or not.
+4. DNS records updated or not
+
+
+
