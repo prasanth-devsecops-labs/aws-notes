@@ -1,0 +1,18 @@
+Java -> Maven, Gradle etc.. build tools
+JDK --> Development kit
+JRE --> Run time environment
+
+JDK --> JRE + Development utilities
+
+Java Source code -> complie -> Bytecode
+Java => run directly
+
+nodejs => compile + run
+
+Java output formats: .ear,  .war,  .jar
+.jar has inbuilt lightweight server
+
+Old Enterprise applications:
+enterprise archive => .ear
+
+Monolithic: .war
