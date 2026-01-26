@@ -1,7 +1,3 @@
-![alt text](fs.jpeg.webp)
-
-
-
 Memory Management commands:
 
 lsblk
@@ -52,10 +48,10 @@ follow same steps above like format and mount volume to new directory
 copy from old directory to new directory
 
 
-sudo mkdir -p /mnt/new_data
+sudo mkdir -p /new_data
 sudo mount /dev/nvme2n1p1 /data
 
-sudo rsync -axv /data/ /mnt/new_data/
+sudo rsync -axv /data/ /new_data/
 
 sudo blkid /dev/nvme2n1p1
 sudo vim /etc/fstab
