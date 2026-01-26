@@ -1,0 +1,68 @@
+![alt text](fs.jpeg.webp)
+
+
+
+Memory Management commands:
+
+lsblk
+
+df -hT
+
+Create new EBS volume and follow below steps to attach and use it.
+
+#partition:
+sudo parted /dev/nvme1n1 --script mklabel gpt mkpart primary 0% 100%
+
+#format:
+sudo mkfs.xfs -f /dev/nvme1n1p1
+
+#create directory or use existing one.
+sudo mkdir -p /data
+
+#mount:
+sudo mount /dev/nvme1n1p1 /data
+
+#check mounted or not:
+df -hT | grep data
+
+#Get UUID: To add permanently 
+sudo blkid /dev/nvme1n1p1
+
+#open this file and add UUID:
+sudo vim /etc/fstab
+
+#change UUID with yours
+UUID=d68b606a-4df3-44c2-bd74-418fa36e9fa2   /data   xfs   defaults,nofail   0   2
+
+
+sudo mount -a
+sudo reboot
+
+#To increase existing volume and to attach:
+
+lsblk
+sudo growpart /dev/nvme0n1 1
+sudo xfs_growfs -d /data
+
+Decrease option not available we need to create new separate volume with decreased size and
+attach this to instance and copy the data from old ebs.
+before that take snapshot of old ebs for backup purpose.
+
+follow same steps above like format and mount volume to new directory
+copy from old directory to new directory
+
+
+sudo mkdir -p /mnt/new_data
+sudo mount /dev/nvme2n1p1 /data
+
+sudo rsync -axv /data/ /mnt/new_data/
+
+sudo blkid /dev/nvme2n1p1
+sudo vim /etc/fstab
+
+#change UUID with yours
+UUID=d68b606a-4df3-44c2-bd74-418fa36e9fa2   /data   xfs   defaults,nofail   0   2
+
+sudo mount -a
+sudo reboot
+
