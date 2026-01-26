@@ -49,7 +49,7 @@ copy from old directory to new directory
 
 
 sudo mkdir -p /new_data
-sudo mount /dev/nvme2n1p1 /data
+sudo mount /dev/nvme2n1p1 /new_data
 
 sudo rsync -axv /data/ /new_data/
 
